@@ -22,6 +22,8 @@
 3. 构建完成后，在 `.\target\release\` 目录下您可以找到编译完成的主程序
 4. 复制 `.\assets\` 目录中的所有文件到 `.\target\release\assets\` ，至此，构建流程全部完成，您可以直接运行 `phira-main.exe` 检查资源文件是否完整。
 
+- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 release 页面下载任意版本，获取资源文件__
+
 ## 32位版本
 
 1. 在命令提示符（cmd）或者 PowerShell 切换到代码根目录（如 `D:\phira\` ）
@@ -45,7 +47,7 @@ note:这里有个坑。。。如果报错的话尝试把 msys64\mingw32\bin 这�
 
 接着把build文件夹下的所有形如 `*.a` 的文件复制到 `phira\prpr-avc\static-lib\i686-pc-windows-gnu` 就可以啦
 
-- __注意：此构建方法仅能保证 cargo 正常编译并输出主程序，并不能用于视频解码__
+- __注意：此构建方法仅能保证 cargo 正常编译并输出主程序，如需用于视频解码请自行加上 protocols，decoders 和 parsers 之类__
 
 ## 常见问题
 
