@@ -2,7 +2,7 @@
 
 ## 准备阶段
 
-1. 确保系统安装了 cargo，可以在终端使用 `cargo -V` 检查系统是否安装了 cargo，如果没有安装，请点击 [这里](./cargo.md) 按步骤安装构建工具
+1. 确保系统安装了 cargo 和 Xcode，可以在终端使用 `cargo -V` 检查系统是否安装了 cargo，如果没有安装，请点击 [这里](./cargo.md) 按步骤安装构建工具
 2. 从 GitHub 下载源码到本地：
     - 使用 git 工具，在终端输入 `git clone https://github.com/TeamFlos/phira.git` 将仓库克隆到本地。
     - 您也可以在 Phira 仓库页面点击 Code 按钮选择 `Download ZIP` 将代码下载到本地，随后将代码解压到本地任意目录。
@@ -14,8 +14,7 @@
 ## 开始构建
 
 1. 打开终端，切换到代码根目录
-2. 输入 `cargo build -r --bin phira-main` ，直到编译完成。
-3. 复制 `.\assets\` 目录中的所有文件到 `.\target\release\assets\` ，至此，构建流程全部完成，您可以直接运行 `phira-main` 检查资源文件是否完整，至此，构建流程结束。
+2. 输入 `cargo build -r --bin phira-main` ，直到编译完成，至此，构建流程全部完成，您可以直接运行 `phira-main` 检查资源文件是否完整
 
 - __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 release 页面下载任意版本，获取资源文件__
 
@@ -24,3 +23,5 @@
 Q. 构建输出 `failed to connect to GitHub`
 
 A. 请检查网络环境。
+
+其余，请补充
