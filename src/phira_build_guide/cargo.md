@@ -32,10 +32,29 @@ A. 请不要更改文件名
     >sudo apt install cargo -y
 2. 若无报错，输入 `cargo -V` 检查是否输出版本号，若出现其他输出，请见 Linux 常见问题
 
-其他系统待补充
-
 ### Linux 常见问题
 
 Q. 输入 `cargo` 时输出 `bash: /usr/bin/cargo: No such file or directory` 或 `cargo: command not found`
 
 A. 未成功安装 cargo，请检查安装完成后是否输出了其他信息。
+
+## macOS
+
+1. 打开终端，输入以下命令
+    >curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+2. 出现选项后输入1，一路回车直到输出 `Rust is installed now. Great!`
+3. 打开终端，输入 `cargo -V` 检查是否成功安装，若返回版本号则安装成功，若出现其他提示，请见 macOS 常见问题。
+4. 前往 [Xcode Downloads](https://developer.apple.com/download/all/?q=Xcode) 下载Xcode，下载完成后双击解压放入盘符根目录 `/Application`
+5. 前往 [Command Line Tools Downloads](https://developer.apple.com/download/all/?q=Command%20Line%20Tools) 下载命令行工具，下载完成后双击打开，一路下一步直到安装完成即可。
+
+其他系统待补充
+
+### macOS 常见问题
+
+Q. 输入 `cargo` 时输出 `bash: /usr/bin/cargo: No such file or directory` 或 `cargo: command not found`
+
+A. 未成功安装 cargo，请检查安装完成后是否输出了其他信息。
+
+Q. 安装 Cargo 时过慢
+
+A. 自己找国内源或者连手机热点

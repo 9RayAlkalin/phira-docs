@@ -47,6 +47,8 @@ note:这里有个坑。。。如果报错的话尝试把 msys64\mingw32\bin 这�
 
 接着把build文件夹下的所有形如 `*.a` 的文件复制到 `phira\prpr-avc\static-lib\i686-pc-windows-gnu` 就可以啦
 
+- __注意：此构建方法仅能保证 cargo 正常编译并输出主程序，并不能用于视频解码__
+
 ## 常见问题
 
 Q. 报错 `failed to send request: 操作超时`
