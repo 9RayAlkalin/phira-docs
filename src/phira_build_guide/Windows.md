@@ -34,11 +34,12 @@
 
 ## 有关静态库的构建（以i686-pc-windows-gnu为例）
 
-在sh上操作（此处使用msys2）
+访问 `https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n5.1.8.tar.gz` 下载源代码并解压到任意目录
+
+在sh上操作（此处使用msys2，注意要将ffmpeg源码复制到 `C:\msys64\home\您的用户名`）
 
 ```sh
-git clone https://git.ffmpeg.org/ffmpeg.git --depth=1
-cd ffmpeg && mkdir build && cd build
+cd FFmpeg-n5.1.8 && mkdir build && cd build
 ../configure --disable-programs --disable-doc --disable-everything --disable-debug --arch=i686 --target_os=mingw32 --cross-prefix=i686-w64-mingw32-
 make
 ```
@@ -47,7 +48,7 @@ note:这里有个坑。。。如果报错的话尝试把 msys64\mingw32\bin 这�
 
 接着把build文件夹下的所有形如 `*.a` 的文件复制到 `phira\prpr-avc\static-lib\i686-pc-windows-gnu` 就可以啦
 
-- __注意：此构建方法仅能保证 cargo 正常编译并输出主程序，如需用于视频解码请自行加上 protocols，decoders 和 parsers 之类__
+- __注意：以上操作仅能保证 cargo 正常编译并输出主程序，如需用于视频解码请自行在 configure 启用 protocol=file，decoders，parsers 等选项__
 
 ## 常见问题
 
@@ -87,4 +88,4 @@ A. 使用的 `libiconv` 有问题，请在 MSYS2 终端中使用 `pacman -S libi
 
 Q. 太麻烦了
 
-A. 这样，直接去 release 页面下吧~~微软我真谢谢你~~
+A. 这样，直接去 [release](https://github.com/TeamFlos/phira/releases/latest) 页面下吧~~微软我真谢谢你~~

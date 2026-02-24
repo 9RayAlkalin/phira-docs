@@ -23,6 +23,6 @@
 
 Q. 构建输出 `failed to connect to GitHub`
 
-A. 请检查网络环境。
+A. 请检查网络环境，或者把 [prpr-miniquad](https://github.com/Mivik/prpr-miniquad)，[prpr-macroquad](https://github.com/Mivik/prpr-macroquad)，[sasa](https://github.com/Mivik/sasa)，[phira-mp](https://github.com/TeamFlos/phira-mp) 的源代码逐一下载到本地并在 `Cargo.toml` 指定上述 crates 的 path（如 `prpr-miniquad = { path = "../../prpr-miniquad" }`） 然后重新构建
 
 其余，请补充
