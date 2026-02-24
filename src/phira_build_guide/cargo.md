@@ -4,13 +4,12 @@
 
 1. 点击 [这里](https://win.rustup.rs/) 下载构建工具安装程序。
 2. 双击打开 `rustup-init.exe` 后出现安装窗口；输入`2` 然后输入 `y` 然后再次输入 `2` ，然后输入 `x86_64-pc-windows-gnu` ，最后一路回车开始安装，直到输出 `Rust is installed now. Great!`
-    - __注意：不建议直接回车安装 MSVC，这在后续构建将会出现大量问题！__~~（虽然最大的问题就是编一个用于 MSVC 的 FFmpeg 静态库来继续构建，但这个得自己摸索，没这个耐心的还是乖乖用 gcc 工具链罢）~~
+    - __注意：不建议直接回车安装 MSVC，这在后续构建将会出现大量问题！__
 
 3. 前往 [MSYS2](https://www.msys2.org/) 官网下载 MSYS2 安装程序，下载完成后双击打开，如无特殊需求，一路下一步即可，直到提示 `Finished the MSYS2 Setup`，点击右下角的按钮后将弹出一个窗口，输入以下指令，安装过程一路回车即可。
     >pacman -Sy && pacman -Syu
     >
     >pacman -S mingw-w64-x86_64-toolchain
-    - __注意：如果你选择了 MSVC，那你应该去下载 [Build Tools for Visual Studio](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/) 而不是 gcc 工具链！__
 
 4. 打开命令提示符（cmd）或 PowerShell，输入 `cargo -V` 检查是否成功安装，若返回版本号则安装成功，若出现其他提示，请见 Windows 常见问题。
 5. 按下图所示，修改环境变量
