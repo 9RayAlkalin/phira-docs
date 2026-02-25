@@ -17,7 +17,7 @@
 2. 输入 `cargo build -r --bin phira-main` ，直到编译完成。
 3. 复制 `.\assets\` 目录中的所有文件到 `.\target\release\assets\` ，至此，构建流程全部完成，您可以直接运行 `phira-main` 检查资源文件是否完整。
 
-- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 release 页面下载任意版本，获取资源文件__
+- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 [release](https://github.com/TeamFlos/phira/releases) 页面下载任意版本的 Windows 或 Linux 压缩包，获取缺失的资源文件__
 
 ## 常见问题
 
