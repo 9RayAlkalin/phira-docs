@@ -34,7 +34,7 @@
 
 ## 有关静态库的构建（以i686-pc-windows-gnu为例）
 
-访问 `https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n5.1.8.tar.gz` 下载源代码并解压到任意目录
+下载 [FFmpeg n5.1.8 源代码（GitHub）)](https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n5.1.8.tar.gz) 并解压到任意目录
 
 在sh上操作（此处使用msys2，注意要将ffmpeg源码复制到 `C:\msys64\home\您的用户名`）
 
