@@ -22,7 +22,7 @@
 3. 构建完成后，在 `.\target\release\` 目录下您可以找到编译完成的主程序
 4. 复制 `.\assets\` 目录中的所有文件到 `.\target\release\assets\` ，至此，构建流程全部完成，您可以直接运行 `phira-main.exe` 检查资源文件是否完整。
 
-- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 release 页面下载任意版本，获取资源文件__
+- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 [release](https://github.com/TeamFlos/phira/releases) 页面下载任意版本，获取缺失的资源文件__
 
 ## 32位版本
 
@@ -31,6 +31,8 @@
 3. 在命令提示符（cmd）或者 PowerShell 使用 `cargo build --target=i686-pc-windows-gnu --release --package phira-main` ，如果不出意外，在 `openssl-sys(build)` 时，您将卡很久很久，请不要退出，这是正常的。
 4. 构建完成后，在 `.\target\release\` 目录下您可以找到编译完成的主程序
 5. 复制 `.\assets\` 目录中的所有文件到 `.\target\release\assets\` ，至此，构建流程全部完成，您可以直接运行 `phira-main.exe` 检查资源文件是否完整。
+
+- __注意：在此文档编写时，代码目录下的资源文件并不完整，如果您发现主程序闪退，您可以前往 [release](https://github.com/TeamFlos/phira/releases) 页面下载任意版本，获取缺失的资源文件__
 
 ## 有关静态库的构建（以i686-pc-windows-gnu为例）
 
